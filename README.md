@@ -25,5 +25,5 @@ This little PowerShell script copies a project and adds all issues with all proj
 |`-SourceProjectNumber`|  <ul><li>[x] </li></ul> | GitHub Project number of the Project that should be cloned | int | 1 |
 |`-TargetOrg`|  <ul><li>[x] </li></ul> | GitHub Org, where the Project should be cloned to| string | octi-org-2 |
 |`-IssueLimit`|  <ul><li>[ ] </li></ul> | How many issues are getting migrated at a maximum. This should be more or equal the ammount of items that you have in the source GitHub project (default: 500) | int | 500 |
-|`-SkipLogin`|  <ul><li>[ ] </li></ul> | GitHub Org, where the Project is located, that should be cloned | switch |  |
-|`-SkipAuthScopeUpdate`|  <ul><li>[ ] </li></ul> | GitHub Org, where the Project is located, that should be cloned | switch |  |
+|`-SkipLogin`|  <ul><li>[ ] </li></ul> | Indicates if `gh auth login -s project` is skipped | switch |  |
+|`-SkipAuthScopeUpdate`|  <ul><li>[ ] </li></ul> | Indicates if `gh auth refresh -s project` is skipped. This flag has only an effect if `-SkipLogin` is **not** provided | switch |  |

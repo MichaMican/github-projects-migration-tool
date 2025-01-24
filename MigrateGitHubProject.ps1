@@ -3,13 +3,13 @@
 #     - Your user needs to have write permissions to both orgs
 
 param (
-    [Parameter(Mandatory = $true, HelpMessage = "example: octo-1")]
+    [Parameter(Mandatory = $true, HelpMessage = "example: octo-org")]
     [string]
     $SourceOrg,
-    [Parameter(Mandatory = $true, HelpMessage = "example: octo-1")]
+    [Parameter(Mandatory = $true, HelpMessage = "example: 1")]
     [int]
     $SourceProjectNumber,
-    [Parameter(Mandatory = $true, HelpMessage = "example: 1")]
+    [Parameter(Mandatory = $true, HelpMessage = "example: octo-org")]
     [string]
     $TargetOrg,
     [Parameter(HelpMessage = "This limit is used when getting issues from the source projectboard - Set this to at least the number of issues you have in your board")]
